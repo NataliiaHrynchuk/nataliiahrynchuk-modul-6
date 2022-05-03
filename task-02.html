@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .item {
+        font-weight: 500;
+      }
+
+      .item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <ul id="ingredients"></ul>
+
+    <!--  Додавання і знімання слухача на кнопки -->
+
+    <button type="button" class="js-target-btn">Цiльова кнопка</button>
+    <button type="button" class="js-add-listener">Додати слухача</button>
+    <button type="button" class="js-remove-listener">Зняти слухача</button>
+
+    <!--   Події сабміта і форми -->
+     <br/>
+    <form class="js-register-form" autocomplete="off">
+      <div role="group">
+        <label>
+          Пошта
+          <input type="email" name="email"/>
+        </label>
+        <label>
+          Пароль
+          <input type="password" name="password"/>
+        </label>
+      </div>
+
+      <br />
+      <div role="group">
+        <b>Тип підписки</b>
+        <label>
+          <input type="radio" name="subscription" value="free" />
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic"/>
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro"/>
+          Pro
+        </label>
+      </div>
+      <br /> 
+      <button type="submit">Зареєструватись</button>
+
+    </form>
+
+    <!--   <form action=""   autocomplite="off"-->
+      <label for="">
+        Ім'я
+        <input type="text" class="js-input" />
+      </label>
+
+        <p>
+          <label for="">
+            <input type="checkbox" class="js-license" />
+            Приймаю ліцензійну угоду
+          </label>
+        </p>
+      
+        <button type="submit" disabled class="js-button">
+          Зареєструватись як <span>Анонім</span>
+        </button>
+
+
+      <!-- Кнопка очищення поля -->
+        <button class="js-clear">Очистити</button>
+        <p class="output js-output"></p>
+
+        <!--  Події мишки  -->
+
+        <div class="box js-box">
+          <div class="inner-box"></div>
+        </div>
+
+
+        <!--  Модалка  -->
+<button class="button" data-action="open-modal">Відкрити модалку</button>
+
+<div class="backdrop js-backdrop">
+  <div class="modal">
+    <h2>Modal window</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi reprehenderit beatae placeat praesentium cupiditate tempore omnis nostrum esse, nesciunt eligendi deserunt ad error sit quo, doloremque quam dolores cumque.</p>
+    <button type="button" class="button" data-action="close-modal">
+      Закрити
+    </button>
+  </div>
+</div>
+
+
+<!--   Modul 7.1  -->
+<form action="" class="form bg1">
+  <label for="">
+    <span>Enter text</span>
+    <input type="text" name="text">
+  </label>
+  <button type="submit">+ Add</button>
+  <button id="test-button" type="button">push me</button>
+</form>
+
+<ul>
+  
+</ul>
+
+    <script src="js/task-02.js" type="module"></script>
+  </body>
+</html>
+
