@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit and form</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .js-register-form {
+        border: 1px solid green;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+        <!========Події сабміта і форми==========>
+     <br/>
+    <form class="js-register-form" autocomplete="off">
+      <div role="group">
+        <label>
+          Пошта
+          <input type="email" name="email"/>
+        </label>
+        <label>
+          Пароль
+          <input type="password" name="password"/>
+        </label>
+      </div>
+
+      <br />
+      <div role="group">
+        <b>Тип підписки</b>
+        <label>
+          <input type="radio" name="subscription" value="free" />
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic"/>
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro"/>
+          Pro
+        </label>
+      </div>
+      <br /> 
+      <button type="submit">Зареєструватись</button>
+
+    </form>
+
+    <script src="js/task-021.js" type="module"></script>
+  </body>
+</html>
+
